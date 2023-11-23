@@ -2,7 +2,7 @@ name: Default
 on: [push, pull_request]
 
 jobs:
-  run_tests:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -10,6 +10,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+      - name: Install dependencies
+        run: npm install
       - name: Build
         run: npm run build
         env:
