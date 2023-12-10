@@ -29,7 +29,7 @@ export const Header = () => {
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 2 }}
+              transition={{ delay: 2, duration: 1 }}
             >
               <Link
                 className="flex w-full items-center justify-center px-3 py-3 transition hover:text-gray-950"
@@ -39,7 +39,11 @@ export const Header = () => {
               </Link>
             </motion.li>
           ))}
-          <motion.li initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 2 }}>
+          <motion.li
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 2, duration: 1 }}
+          >
             <Link href="#contact" className="btn btn-primary group">
               Contact me here <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
             </Link>

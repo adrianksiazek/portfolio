@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <div
           className={clxs(
-            "absolute right-[11rem] top-[12rem] -z-10 rounded-full",
+            "absolute right-[11rem] top-[14rem] -z-10 rounded-full",
             "h-[31.25rem] w-[31.25rem] sm:w-[68.75rem]",
             "bg-[#fbe2e3] blur-[10rem]",
             "dark:bg-[#946263]",
@@ -30,7 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div
           className={clxs(
             "absolute -z-10 h-[31.25rem] w-[50rem] rounded-full",
-            "left-[-35rem] top-[4rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]",
+            "left-[-15rem] top-[5rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]",
             "bg-[#dbd7fb] blur-[10rem]",
             "dark:bg-[#676394]",
           )}

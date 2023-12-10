@@ -31,7 +31,7 @@ export const Hero = () => {
         className="flex flex-col items-center justify-center gap-4 px-4 text-lg font-medium sm:flex-row"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 2 }}
+        transition={{ delay: 2, duration: 1 }}
       >
         <a className="btn btn-secondary group" href="/CV.pdf" download>
           Download CV <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
@@ -45,17 +45,20 @@ export const Hero = () => {
       </motion.div>
 
       <motion.div
-        className="absolute right-2 text-2xl font-bold text-gray-900"
+        className="absolute bottom-8 right-2 flex flex-col text-2xl font-bold text-gray-900"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.4, delay: 2 }}
       >
-        <div className="rotate-90">scroll</div>
-        <motion.div
-          className="h-12 w-2 rounded-full bg-gray-900"
-          animate={{ y: 130 }}
-          transition={{ repeat: Infinity, duration: 2, repeatType: "reverse" }}
-        ></motion.div>
+        <div className="mb-8 rotate-90">scroll</div>
+        <div className="flex justify-center overflow-hidden">
+          <motion.div
+            className="h-14 w-2 rounded-full bg-gray-900"
+            initial={{ y: "-200%" }}
+            animate={{ y: "100%" }}
+            transition={{ repeat: Infinity, ease: "easeInOut", duration: 1.4 }}
+          ></motion.div>
+        </div>
       </motion.div>
     </section>
   );
