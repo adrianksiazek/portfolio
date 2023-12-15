@@ -9,11 +9,11 @@ import { BsArrowRight } from "react-icons/bs";
 
 export const Header = () => {
   return (
-    <header className="relative z-[999]">
+    <header className="header relative z-[999]">
       <nav
         className={clxs(
-          "fixed left-1/2 top-[0.15rem] flex h-12 -translate-x-1/2 py-2",
-          "sm:top-[1.7rem] sm:h-[inital] sm:py-0",
+          "nav fixed left-1/2 top-[0.15rem] w-full -translate-x-1/2 bg-transparent py-2",
+          "sm:top-0 sm:h-[inital] sm:py-8",
         )}
       >
         <ul
@@ -45,7 +45,7 @@ export const Header = () => {
             transition={{ delay: 2, duration: 1 }}
           >
             <Link href="#contact" className="btn btn-primary group">
-              Contact me here <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
+              Let's talk <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
             </Link>
           </motion.li>
         </ul>
