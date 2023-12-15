@@ -8,7 +8,7 @@ export const useAbout = () => {
         trigger: ".about",
         start: "+=200 center",
         end: "center center",
-        scrub: true,
+        scrub: 2,
         toggleActions: "play none none reverse",
       },
     });

@@ -8,7 +8,7 @@ export const useSkills = () => {
         trigger: ".skills",
         start: "-=200 center",
         end: "top center",
-        scrub: true,
+        scrub: 2,
         toggleActions: "play none none reverse",
       },
     });
