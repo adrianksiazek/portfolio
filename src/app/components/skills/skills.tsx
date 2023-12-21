@@ -1,51 +1,51 @@
 "use client";
 
-import React from "react";
+import { services, technologies } from "@/app/lib/data";
 import { motion } from "framer-motion";
-import { HiDownload } from "react-icons/hi";
-import { BsLinkedin } from "react-icons/bs";
-import { FaGithubSquare } from "react-icons/fa";
-import { useSkills } from "./skills.effect";
 
 export const Skills = () => {
-  useSkills();
-
   return (
-    <section className="skills w-full text-gray-950">
-      <motion.div
-        className="flex h-screen flex-col items-center justify-center"
+    <section id="skills" className="section w-full">
+      <motion.h2
+        className="text-center text-8xl font-semibold uppercase"
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
-        transition={{ delay: 1, duration: 2 }}
+        transition={{ duration: 1 }}
       >
-        <h2 className="text-9xl">About me</h2>
-        <div className="mx-auto max-w-2xl text-lg">
-          <h2 className="mt-5 text-4xl">A brief intro, who am I? </h2>
-          <p className="mt-5">
-            I am a self-taught, creative frontend developer, web designer and wanted to become full stack developer with
-            UI/UX skills in the future based in Wroclaw, Poland. I'm passionate about catering to emerging startups and
-            small businesses that make an impact, inspire and connect with people 😎. When I'm not developing or
-            designing, I enjoy watching videos about front-end development, productivity and design. I also enjoy
-            spending time with my cat 🐈 and distracting myself by going to the gym or riding my bike.
+        Skills
+      </motion.h2>
+      <div className="my-24 flex items-start justify-between">
+        <div className="w-1/2">
+          <h3 className="text-5xl font-semibold">my expertises.</h3>
+          <p className="mt-4 max-w-md text-xl leading-8">
+            I focus on all things design and web related. With each of my services, my goal is to deliver an impactful
+            and elevating digital experience for everyone.
           </p>
-          <motion.div
-            className="mt-4 flex flex-col items-center justify-center gap-4 px-4 text-lg font-medium sm:flex-row"
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 2, duration: 1 }}
-          >
-            <a className="btn btn-secondary group" href="/CV.pdf" download>
-              Download CV <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
-            </a>
-            <a className="btn btn-tertiary" href="https://linkedin.com/" target="_blank">
-              <BsLinkedin />
-            </a>
-            <a className="btn btn-tertiary text-[1.35rem]" href="https://github.com/azeksi" target="_blank">
-              <FaGithubSquare />
-            </a>
-          </motion.div>
         </div>
-      </motion.div>
+        <div className="text-primary w-1/2 text-7xl font-extrabold">
+          <ul>
+            {services.map((service) => (
+              <li key={service}>{service}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div className="my-24 flex items-start justify-between">
+        <div className="w-1/2">
+          <h3 className="text-5xl font-semibold">my digital tool box.</h3>
+          <p className="mt-4 max-w-md text-xl leading-8">
+            These are my go to tech stack to make any projects happen. I am always eager of learning more about my
+            current stack, and new technologies that could expand my horizons.
+          </p>
+        </div>
+        <div className="text-secondary w-1/2 text-7xl font-extrabold">
+          <ul>
+            {technologies.map((technology) => (
+              <li key={technology}>{technology}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </section>
   );
 };

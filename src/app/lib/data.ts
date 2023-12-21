@@ -20,3 +20,18 @@ export const links = [
     hash: "#experience",
   },
 ] as const;
+
+
+export const services = ["Web Development", "Web Design", "UI/UX Design", "Marketing"] as const;
+
+export const technologies = [
+  "Javascript",
+  "Typescript",
+  "HTML",
+  "CSS",
+  "Figma",
+  "Gsap",
+  "TailwindsCSS",
+  "React",
+  "Next",
+] as const;

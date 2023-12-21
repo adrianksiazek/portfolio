@@ -6,6 +6,7 @@ import "./styles/globals.css";
 
 const cabinetGrotesk = localFont({
   src: "./styles/fonts/CabinetGrotesk-Variable.woff2",
+  variable: "--font-cb",
 });
 
 export const metadata: Metadata = {
@@ -16,7 +17,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`body relative bg-gray-200 font-cabinet text-gray-950`}>
+      <body
+        className={`${cabinetGrotesk.variable} body font-cabinet-grotesk relative bg-gray-200 font-cabinet text-gray-950`}
+      >
         <Header />
         <div
           className={clxs(

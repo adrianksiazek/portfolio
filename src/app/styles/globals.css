@@ -2,15 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'CabinetGrotesk-Variable';
-    src: url('./fonts/CabinetGrotesk-Variable.woff2') format('woff2'),
-         url('./fonts/CabinetGrotesk-Variable.woff') format('woff');
-         font-weight: 100 900;
-         font-display: swap;
-         font-style: normal;
-}
-
 @layer components {
     .btn{
         @apply flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 transition-all cursor-pointer
@@ -23,5 +14,8 @@
     }
     .btn-tertiary{
         @apply bg-white text-gray-700 p-4 border-black/10 focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950
+    }
+    .section{
+        @apply max-w-[1440px] 2xl:px-0 md:px-4 px-2
     }
 }

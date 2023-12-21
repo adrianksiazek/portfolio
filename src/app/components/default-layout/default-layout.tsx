@@ -1,11 +1,9 @@
 "use client";
 
-import React from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import { initializeApp } from "./initalize-app";
 
 export const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
+  initializeApp();
+
   return <div>{children}</div>;
 };

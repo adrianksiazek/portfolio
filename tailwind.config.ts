@@ -8,11 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#946263",
+        secondary: "#676394",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      fontFamily: { cabinet: ["var(--font-cabinet-grotesk)"] },
+      fontFamily: { "cabinet-grotesk": "var(--font-cb)" },
     },
   },
   plugins: [],

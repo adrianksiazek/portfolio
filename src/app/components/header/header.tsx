@@ -9,7 +9,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 export const Header = () => {
   return (
-    <header className="header relative z-[999]">
+    <header id="header" className="relative z-[999]">
       <nav
         className={clxs(
           "nav fixed left-1/2 top-[0.15rem] w-full -translate-x-1/2 bg-transparent py-2",

@@ -9,15 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@studio-freight/lenis": "^1.0.29",
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@studio-freight/lenis": "^1.0.29",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@uidotdev/usehooks": "^2.4.1",
     "autoprefixer": "^10.0.1",
     "clsx": "^2.0.0",
     "eslint": "^8",

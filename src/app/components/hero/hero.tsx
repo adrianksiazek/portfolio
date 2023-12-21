@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
-    <section className="hero relative flex h-screen w-full items-center justify-center">
+    <section id="hero" className="relative flex h-screen w-full items-center justify-center">
       <div className="max-w-6xl">
         <div className="my-10 flex flex-col gap-32 text-2xl font-extrabold uppercase sm:text-4xl md:text-9xl">
           <div className="overflow-hidden px-4 text-center">

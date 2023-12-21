@@ -5,15 +5,14 @@ export const useAbout = () => {
   useEffect(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: ".about",
-        start: "+=200 center",
-        end: "center center",
+        trigger: "#about",
+        start: "-=200 center",
+        end: "top center",
         scrub: 2,
         toggleActions: "play none none reverse",
       },
     });
 
-    tl.to(".body", { backgroundColor: "#030712", duration: 4 });
-    tl.to("nav", { backgroundColor: "#030712" });
+    tl.to(".body", { backgroundColor: "#e5e7eb" });
   }, []);
 };
