@@ -1,9 +1,12 @@
 "use client";
 
+import { useEffect, useLayoutEffect } from "react";
 import { initializeApp } from "./initalize-app";
 
 export const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
-  initializeApp();
+  useLayoutEffect(() => {
+    initializeApp();
+  }, []);
 
   return <div>{children}</div>;
 };

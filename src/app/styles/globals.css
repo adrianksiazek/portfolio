@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './reset.css';
+
 @layer components {
     .btn{
         @apply flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 transition-all cursor-pointer
@@ -17,5 +19,11 @@
     }
     .section{
         @apply max-w-[1440px] 2xl:px-0 md:px-4 px-2
+    }
+    .heading-section{
+        @apply text-center text-8xl font-bold uppercase
+    }
+    .form-control{
+        @apply border-b-2 border-primary py-4 bg-transparent
     }
 }
