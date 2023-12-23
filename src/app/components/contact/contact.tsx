@@ -6,6 +6,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import { HiMail } from "react-icons/hi";
+import { Clock } from "./clock/clock";
 
 export const Contact = () => {
   return (
@@ -70,7 +71,7 @@ export const Contact = () => {
           </div>
           <div className="py-8">
             <h4 className="text-4xl font-bold">Location</h4>
-            <p></p>
+            <Clock city="Wrocław" timeZone="Europe/Warsaw" />
           </div>
         </div>
       </div>
