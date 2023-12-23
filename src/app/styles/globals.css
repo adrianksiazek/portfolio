@@ -24,6 +24,6 @@
         @apply text-center text-8xl font-bold uppercase
     }
     .form-control{
-        @apply border-b-2 border-primary py-4 bg-transparent
+        @apply border-b-2 border-gray-950 pb-4 bg-transparent focus:outline-none
     }
 }

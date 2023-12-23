@@ -1,12 +1,18 @@
 "use client";
 
-import { useEffect, useLayoutEffect } from "react";
-import { initializeApp } from "./initalize-app";
+import { ReactLenis } from "@studio-freight/react-lenis";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLayoutEffect } from "react";
 
-export const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
+export function DefaultLayout({ children }: { children: React.ReactNode }) {
   useLayoutEffect(() => {
-    initializeApp();
+    gsap.registerPlugin(ScrollTrigger);
   }, []);
 
-  return <div>{children}</div>;
-};
+  return (
+    <ReactLenis root options={{ lerp: 0.1, duration: 1.5, smoothTouch: true }}>
+      {children}
+    </ReactLenis>
+  );
+}

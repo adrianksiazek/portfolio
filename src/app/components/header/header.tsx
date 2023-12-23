@@ -1,13 +1,16 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import clxs from "clsx";
 import { links } from "../../lib/data";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
+import { useLenis } from "@studio-freight/react-lenis";
 
 export const Header = () => {
+  const lenis = useLenis();
+
   return (
     <header id="header" className="relative z-[999]">
       <nav
@@ -34,6 +37,9 @@ export const Header = () => {
               <Link
                 className="flex w-full items-center justify-center px-3 py-3 transition hover:text-gray-950"
                 href={link.hash}
+                onClick={() => {
+                  lenis.scrollTo(link.hash);
+                }}
               >
                 {link.name}
               </Link>
@@ -44,7 +50,13 @@ export const Header = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 2, duration: 1 }}
           >
-            <Link href="#contact" className="btn btn-primary group">
+            <Link
+              href="#contact"
+              className="btn btn-primary group"
+              onClick={() => {
+                lenis.scrollTo("#contact");
+              }}
+            >
               Let's talk <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
             </Link>
           </motion.li>

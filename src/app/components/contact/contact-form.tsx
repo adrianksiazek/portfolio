@@ -13,7 +13,7 @@ const ContactForm = () => {
           <Input formControlClass="w-full" name="email" placeholder="Your email" />
         </div>
       </div>
-      <TextArea name="message" placeholder="Your message" formControlClass="w-full mt-8" />
+      <TextArea name="message" placeholder="Your message" formControlClass="w-full mt-16" />
       <button type="submit" className="btn btn-primary mt-8">
         Send message
       </button>

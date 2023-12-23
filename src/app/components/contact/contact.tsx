@@ -69,7 +69,7 @@ export const Contact = () => {
               </li>
             </motion.ul>
           </div>
-          <div className="py-8">
+          <div className="pt-8">
             <h4 className="text-4xl font-bold">Location</h4>
             <Clock city="Wrocław" timeZone="Europe/Warsaw" />
           </div>

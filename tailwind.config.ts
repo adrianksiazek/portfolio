@@ -19,6 +19,6 @@ const config: Config = {
       fontFamily: { "cabinet-grotesk": "var(--font-cb)" },
     },
   },
-  plugins: [],
+  plugins: [require("@codaworks/react-glow/tailwind")],
 };
 export default config

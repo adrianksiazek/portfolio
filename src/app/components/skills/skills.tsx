@@ -3,6 +3,21 @@
 import { services, technologies } from "@/app/lib/data";
 import { motion } from "framer-motion";
 
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5,
+    },
+  },
+};
+
+const listItem = {
+  hidden: { y: 100, opacity: 0 },
+  show: { y: 0, opacity: 1 },
+};
+
 export const Skills = () => {
   return (
     <section id="skills" className="section my-64 w-full">
@@ -24,11 +39,13 @@ export const Skills = () => {
           </p>
         </div>
         <div className="text-primary w-1/2 text-7xl font-extrabold">
-          <ul>
+          <motion.ul variants={container} initial="hidden" animate="show">
             {services.map((service) => (
-              <li key={service}>{service}</li>
+              <motion.li variants={listItem} key={service}>
+                {service}
+              </motion.li>
             ))}
-          </ul>
+          </motion.ul>
         </div>
       </div>
       <div className="my-24 flex items-start justify-between">
