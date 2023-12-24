@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import moment from "moment-timezone";
 
 export const Clock = ({ city, timeZone }: { city: string; timeZone: string }) => {
-  const [currentTime, setCurrentTime] = useState(moment().tz(timeZone).format("HH:mm:ss"));
+  const [currentTime, setCurrentTime] = useState("");
 
   useEffect(() => {
     const intervalId = setInterval(() => {
