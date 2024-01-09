@@ -9,9 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-email/components": "0.0.12",
     "next": "14.0.4",
-    "react": "^18",
-    "react-dom": "^18"
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@codaworks/react-glow": "^1.0.4",
@@ -31,6 +32,7 @@
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.9",
     "react-icons": "^4.12.0",
+    "resend": "^2.1.0",
     "tailwindcss": "^3.3.6",
     "typescript": "^5"
   }

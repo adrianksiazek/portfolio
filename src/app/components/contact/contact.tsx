@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import ContactForm from "./contact-form";
+import ContactForm from "./contact-form/contact-form";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
@@ -20,8 +20,8 @@ export const Contact = () => {
       >
         contact me
       </motion.h2>
-      <div className="my-24 flex space-x-52">
-        <div className="flex w-3/4 flex-col justify-between">
+      <div className="my-24 flex flex-col lg:flex-row lg:space-x-52">
+        <div className="mb-20 flex w-full flex-col justify-between lg:mb-0 lg:w-3/4">
           <div>
             <h3 className="text-6xl font-bold">Have an awesome idea? Let's bring it to life.</h3>
             <p className="mb-16 mt-8 text-3xl text-gray-500">
@@ -31,7 +31,7 @@ export const Contact = () => {
           </div>
           <ContactForm />
         </div>
-        <div className="w-1/4">
+        <div className="w-full lg:w-1/4">
           <div className="pb-8">
             <h4 className="text-4xl font-bold">Contact details</h4>
             <ul className="mt-8 text-lg font-medium">

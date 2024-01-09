@@ -14,7 +14,7 @@ export const Header = () => {
     <header id="header" className="relative z-[999]">
       <nav
         className={clxs(
-          "nav bg-transparen fixed left-1/2 top-[0.15rem] w-full -translate-x-1/2 py-2 shadow-2xl backdrop-blur-xl",
+          "nav bg-transparen fixed left-1/2 top-[0.15rem] w-full -translate-x-1/2 py-2",
           "sm:top-0 sm:h-[inital] sm:py-8",
         )}
       >

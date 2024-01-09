@@ -2,8 +2,11 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { useHero } from "./hero.effect";
 
 export const Hero = () => {
+  useHero();
+
   return (
     <section id="hero" className="relative flex h-screen w-full items-center justify-center">
       <div className="max-w-6xl">
