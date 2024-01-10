@@ -9,7 +9,6 @@ export const useHero = () => {
         start: "top top",
         end: "+=100 top",
         scrub: 1,
-        markers: true,
         toggleActions: "play none none reverse",
       },
     });
