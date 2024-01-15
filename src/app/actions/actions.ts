@@ -28,22 +28,26 @@ export const sendEmail = async (formData: FormData) => {
     };
   }
 
-  if (Object.keys(errors).length > 0) {
-    return errors;
+  let data;
+  data = await resend.emails.send({
+    from: "onboarding@resend.com",
+    to: "8ksiaze8@gmail.com",
+    subject: "Message from contact form",
+    reply_to: senderEmail as string,
+    react: React.createElement(ContactFormEmail, {
+      message: message as string,
+      senderEmail: senderEmail as string,
+    }),
+  });
+
+  if (data.error) {
+    errors = {
+      ...errors,
+      global: data.error.message,
+    };
   }
 
-  try {
-    await resend.emails.send({
-      from: "onboarding@resend.com",
-      to: "8ksiaze8@gmail.com",
-      subject: "Message from contact form",
-      reply_to: senderEmail as string,
-      react: React.createElement(ContactFormEmail, {
-        message: message as string,
-        senderEmail: senderEmail as string,
-      }),
-    });
-  } catch (error: unknown) {
-    console.log(error);
+  if (Object.keys(errors).length > 0) {
+    return errors;
   }
 };
