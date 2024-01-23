@@ -15,7 +15,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@codaworks/react-glow": "^1.0.4",
+    "@codaworks/react-glow": "1.0.6",
     "@studio-freight/react-lenis": "^0.0.38",
     "@types/node": "^20",
     "@types/react": "^18",
