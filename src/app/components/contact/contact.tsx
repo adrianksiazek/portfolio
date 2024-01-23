@@ -7,8 +7,11 @@ import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import { HiMail } from "react-icons/hi";
 import { Clock } from "./clock/clock";
+import { useContact } from "./contact.effect";
 
 export const Contact = () => {
+  useContact();
+
   return (
     <section id="contact" className="section my-64 w-full">
       <motion.h2
@@ -58,7 +61,7 @@ export const Contact = () => {
                 </a>
               </li>
               <li>
-                <a className="btn btn-tertiary" href="https://linkedin.com/" target="_blank">
+                <a className="btn btn-tertiary" href="https://linkedin.com/adrian-ksiazek" target="_blank">
                   <BsLinkedin /> Linkedin
                 </a>
               </li>

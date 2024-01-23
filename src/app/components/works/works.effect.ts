@@ -1,13 +1,13 @@
 import gsap from "gsap";
 import { useEffect } from "react";
 
-export const useDescription = () => {
+export const useWorks = () => {
   useEffect(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: "#description",
-        start: "+=200 center",
-        end: "center center",
+        trigger: "#works",
+        start: "-=400 center",
+        end: "top center",
         scrub: 2,
         toggleActions: "play none none reverse",
         fastScrollEnd: true,

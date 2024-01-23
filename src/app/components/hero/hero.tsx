@@ -16,7 +16,7 @@ export const Hero = () => {
               Hey, I'm Adrian
             </motion.div>
           </div>
-          <div className="overflow-hidden px-4 text-center">
+          <div className="overflow-hidden px-4 text-center text-gray-300">
             <motion.div initial={{ y: 144 }} animate={{ y: 0 }} transition={{ duration: 2 }}>
               Hey, I'm Adrian
             </motion.div>

@@ -4,6 +4,7 @@ import { DefaultLayout } from "./components/default-layout/default-layout";
 import { Skills } from "./components/skills/skills";
 import { Description } from "./components/description/description";
 import { Contact } from "./components/contact/contact";
+import { Works } from "./components/works/works";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Description />
         <About />
         <Skills />
+        <Works />
         <Contact />
       </main>
     </DefaultLayout>

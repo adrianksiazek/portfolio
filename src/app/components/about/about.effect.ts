@@ -10,6 +10,7 @@ export const useAbout = () => {
         end: "top center",
         scrub: 2,
         toggleActions: "play none none reverse",
+        fastScrollEnd: true,
       },
     });
 

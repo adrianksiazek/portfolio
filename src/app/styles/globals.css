@@ -2,28 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './reset.css';
+@import "./reset.css";
 
 @layer components {
-    .btn{
-        @apply flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 transition-all cursor-pointer disabled:cursor-not-allowed
-    }
-    .btn-primary{
-        @apply bg-gray-900 text-white px-7 py-3 hover:bg-gray-950 active:scale-105
-    }
-    .btn-secondary{
-        @apply bg-white text-gray-900 px-7 py-3 border border-black/10
-    }
-    .btn-tertiary{
-        @apply bg-white text-gray-700 p-4 border-black/10 focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950
-    }
-    .section{
-        @apply max-w-[1440px] 2xl:px-0 md:px-4 px-2
-    }
-    .heading-section{
-        @apply text-center text-8xl font-bold uppercase
-    }
-    .form-control{
-        @apply border-b-2 border-gray-950 pb-4 bg-transparent focus:outline-none
-    }
+  .btn {
+    @apply flex cursor-pointer items-center gap-2 rounded-full outline-none transition-all hover:scale-110 focus:scale-110 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply bg-gray-900 px-7 py-3 text-white hover:bg-gray-950 active:scale-105;
+  }
+  .btn-secondary {
+    @apply border border-black/10 bg-white px-7 py-3 text-gray-900;
+  }
+  .btn-tertiary {
+    @apply border-black/10 bg-white p-4 text-gray-700 hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15];
+  }
+  .section {
+    @apply max-w-[1440px] px-2 md:px-4 2xl:px-0;
+  }
+  .heading-section {
+    @apply text-center text-8xl font-bold uppercase;
+  }
+  .form-control {
+    @apply border-b-2 border-gray-950 bg-transparent pb-4 focus:outline-none;
+  }
 }
