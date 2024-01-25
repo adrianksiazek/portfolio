@@ -22,17 +22,17 @@ export const Works = () => {
       <div className="my-24">
         <GlowCapture>
           <Glow>
-            <div className="flex flex-wrap gap-8">
+            <div className="flex flex-wrap justify-center gap-8">
               {projects.map((project, index) => (
                 <div
                   key={index}
-                  className="flex h-[500px] max-h-[500px] w-[700px] max-w-[700px] flex-col rounded-lg border-2 border-gray-600 p-8 glow:bg-gray-900"
+                  className="flex h-[700px] w-full max-w-[700px] flex-col rounded-lg border-2 border-gray-600 p-8 glow:bg-gray-900"
                 >
                   <div className="flex-1">
                     <p>{project.name}</p>
                     <p className="mt-8 text-sm leading-6 text-gray-600">{project.description}</p>
                   </div>
-                  <div>
+                  <div className="pt-4">
                     <ul className="flex flex-wrap gap-4 text-xs text-gray-400">
                       {project.technologies.map((technoloy, index) => (
                         <li key={index} className="rounded-full border-2 border-gray-600 px-3 py-1">

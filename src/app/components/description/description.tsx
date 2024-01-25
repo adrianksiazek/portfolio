@@ -15,7 +15,7 @@ export const Description = () => {
           y: 100,
         }}
       >
-        <h2 className="text-8xl font-bold text-gray-200">
+        <h2 className="text-5xl font-bold text-gray-200 lg:text-8xl">
           I create elevating digtial experiences that inspire and connect with people through development and design
         </h2>
       </motion.div>

@@ -19,8 +19,8 @@ export const About = () => {
       >
         About me
       </motion.h2>
-      <div className="mt-48 flex w-full gap-24">
-        <div className="w-1/2 rounded-full">
+      <div className="mt-48 flex w-full flex-col gap-24 lg:flex-row">
+        <div className="w-full rounded-full lg:w-1/2">
           <Image
             src="/images/portrait.jpg"
             alt="portrait"
@@ -35,7 +35,7 @@ export const About = () => {
           />
         </div>
         <motion.div
-          className="flex h-screen w-1/2 flex-col"
+          className="flex h-screen w-full flex-col lg:w-1/2"
           whileInView={{ y: 0, opacity: 1 }}
           initial={{ y: 100, opacity: 0 }}
           transition={{ delay: 1, duration: 1 }}

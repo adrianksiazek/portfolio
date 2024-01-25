@@ -43,18 +43,7 @@ export const projects = [
     name: "Archispace",
     description:
       "Archispace is a BIM platform - a public space where producers can publish their BIM assets for architectural and design purposes for designers and show their products catalogs. Beyond that, the platform is supposed to deliver many additional features like messaging between producers and designers, containers and products liking and observing and extensive reporting. Implemented features: homepage for authenicated and unauthenticated user, contact form, partners form, producer reports, integration with external CRM system",
-    technologies: [
-      "Next",
-      "Typescript",
-      "Reach Hooks",
-      "React Query",
-      "Tailwind",
-      "Laravel",
-      "Laravel Nova",
-      "Cypress",
-      "MySQL",
-      "Figma",
-    ],
+    technologies: ["Next", "Typescript", "React Query", "Tailwind", "Laravel", "Cypress", "MySQL", "Figma"],
   },
   {
     name: "Erepair Forms",

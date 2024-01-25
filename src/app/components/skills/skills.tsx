@@ -30,7 +30,7 @@ export const Skills = () => {
       >
         Skills
       </motion.h2>
-      <div className="my-24 flex items-start justify-between">
+      <div className="my-24 flex flex-col items-start justify-between lg:flex-row">
         <div className="w-1/2">
           <h3 className="text-5xl font-semibold">my expertises.</h3>
           <p className="mt-4 max-w-md text-xl leading-8 text-gray-800">
@@ -38,7 +38,7 @@ export const Skills = () => {
             and elevating digital experience for everyone.
           </p>
         </div>
-        <div className="text-primary w-1/2 text-7xl font-extrabold">
+        <div className="w-1/2 text-5xl font-extrabold text-primary lg:text-7xl">
           <motion.ul variants={container} initial="hidden" animate="show">
             {services.map((service) => (
               <motion.li variants={listItem} key={service}>
@@ -48,7 +48,7 @@ export const Skills = () => {
           </motion.ul>
         </div>
       </div>
-      <div className="my-24 flex items-start justify-between">
+      <div className="my-24 flex flex-col items-start justify-between lg:flex-row">
         <div className="w-1/2">
           <h3 className="text-5xl font-semibold">my digital tool box.</h3>
           <p className="mt-4 max-w-md text-xl leading-8 text-gray-800">
@@ -56,7 +56,7 @@ export const Skills = () => {
             current stack, and new technologies that could expand my horizons.
           </p>
         </div>
-        <div className="text-secondary w-1/2 text-7xl font-extrabold">
+        <div className="w-1/2 text-5xl font-extrabold text-secondary lg:text-7xl">
           <ul>
             {technologies.map((technology) => (
               <li key={technology}>{technology}</li>

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Header } from "./components/header/header";
 import clxs from "clsx";
@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body
-        className={`${cabinetGrotesk.variable} body font-cabinet-grotesk relative bg-gray-200 font-cabinet text-gray-950`}
+        className={`${cabinetGrotesk.variable} body font-cabinet relative bg-gray-200 font-cabinet-grotesk text-gray-950`}
       >
         <Header />
         <div
@@ -32,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div
           className={clxs(
             "absolute -z-10 h-[31.25rem] w-[50rem] rounded-full",
-            "left-[-15rem] top-[5rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]",
+            "right-[11rem] top-[5rem] sm:w-[68.75rem] lg:left-[-15rem]",
             "bg-[#dbd7fb] blur-[10rem]",
             "dark:bg-[#676394]",
           )}
