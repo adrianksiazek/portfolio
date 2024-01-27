@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { useWorks } from "./works.effect";
 import { GlowCapture, Glow } from "@codaworks/react-glow";
 import { projects } from "@/app/lib/data";
+import Image from "next/image";
+import clsx from "clsx";
 
 export const Works = () => {
   useWorks();
@@ -26,11 +28,32 @@ export const Works = () => {
               {projects.map((project, index) => (
                 <div
                   key={index}
-                  className="flex h-[700px] w-full max-w-[700px] flex-col rounded-lg border-2 border-gray-600 p-8 glow:bg-gray-900"
+                  className={clsx(
+                    "flex h-full w-full flex-col rounded-lg border-2 border-gray-600 p-8 glow:bg-gray-900 2xl:h-[700px] 2xl:w-[700px]",
+                    project.image && "lg:h-[700px] 2xl:w-full",
+                    !project.image && "h-[400px]",
+                  )}
                 >
-                  <div className="flex-1">
+                  <div className="relative flex-1 overflow-hidden">
                     <p>{project.name}</p>
-                    <p className="mt-8 text-sm leading-6 text-gray-600">{project.description}</p>
+                    <p
+                      className={clsx(
+                        "mt-8 w-full text-justify text-sm leading-6 text-gray-600",
+                        project.image && "lg:w-2/5 xl:w-1/2",
+                        !project.image && "w-full",
+                      )}
+                    >
+                      {project.description}
+                    </p>
+                    {project.image && (
+                      <Image
+                        src={project.image}
+                        className="-right-48 top-0 transition-all lg:absolute"
+                        alt="Project work"
+                        width={900}
+                        height={900}
+                      />
+                    )}
                   </div>
                   <div className="pt-4">
                     <ul className="flex flex-wrap gap-4 text-xs text-gray-400">

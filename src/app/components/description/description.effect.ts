@@ -10,7 +10,6 @@ export const useDescription = () => {
         end: "center center",
         scrub: 2,
         toggleActions: "play none none reverse",
-        fastScrollEnd: true,
       },
     });
 

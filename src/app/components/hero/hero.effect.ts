@@ -10,7 +10,6 @@ export const useHero = () => {
         end: "+=100 top",
         scrub: 1,
         toggleActions: "play none none reverse",
-        fastScrollEnd: true,
       },
     });
 

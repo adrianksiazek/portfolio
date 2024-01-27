@@ -20,7 +20,7 @@ export const Header = () => {
       >
         <ul
           className={clxs(
-            "lg;w-[22rem] flex w-full flex-wrap items-center justify-center justify-center gap-y-1",
+            "lg;w-[22rem] flex w-full flex-wrap items-center justify-center gap-y-1",
             "text-[0.9rem] font-medium text-gray-500",
             "sm:w-[initial] sm:flex-nowrap sm:gap-5",
           )}

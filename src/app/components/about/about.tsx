@@ -38,7 +38,7 @@ export const About = () => {
           className="flex h-screen w-full flex-col lg:w-1/2"
           whileInView={{ y: 0, opacity: 1 }}
           initial={{ y: 100, opacity: 0 }}
-          transition={{ delay: 1, duration: 1 }}
+          transition={{ delay: 0.5, duration: 1 }}
           viewport={{ once: true }}
         >
           <div className="mx-auto max-w-2xl text-justify text-lg">
