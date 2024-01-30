@@ -22,18 +22,18 @@ export const Works = () => {
         Works
       </motion.h2>
       <div className="my-24">
-        <GlowCapture>
-          <Glow>
-            <div className="flex flex-wrap justify-center gap-8">
-              {projects.map((project, index) => (
-                <div
-                  key={index}
-                  className={clsx(
-                    "flex h-full w-full flex-col rounded-lg border-2 border-gray-600 p-8 glow:bg-gray-900 2xl:h-[700px] 2xl:w-[700px]",
-                    project.image && "lg:h-[700px] 2xl:w-full",
-                    !project.image && "h-[400px]",
-                  )}
-                >
+        <div className="flex flex-col flex-wrap justify-center gap-8 2xl:flex-row">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className={clsx(
+                "flexw-full group relative flex-col rounded-lg border-2 border-gray-600 bg-[url('/images/bg-work.jpg')] bg-cover 2xl:h-[700px] 2xl:w-[700px]",
+                project.image && "h-[800px] lg:h-[700px] 2xl:w-full",
+                !project.image && "h-[400px]",
+              )}
+            >
+              <div className="absolute inset-0 bg-black bg-opacity-80 p-8">
+                <div className="flex h-full flex-col">
                   <div className="relative flex-1 overflow-hidden">
                     <p>{project.name}</p>
                     <p
@@ -48,14 +48,14 @@ export const Works = () => {
                     {project.image && (
                       <Image
                         src={project.image}
-                        className="-right-48 top-0 transition-all lg:absolute"
+                        className="-right-48 top-0 transition-all group-hover:scale-105 lg:absolute"
                         alt="Project work"
                         width={900}
                         height={900}
                       />
                     )}
                   </div>
-                  <div className="pt-4">
+                  <div>
                     <ul className="flex flex-wrap gap-4 text-xs text-gray-400">
                       {project.technologies.map((technoloy, index) => (
                         <li key={index} className="rounded-full border-2 border-gray-600 px-3 py-1">
@@ -65,10 +65,10 @@ export const Works = () => {
                     </ul>
                   </div>
                 </div>
-              ))}
+              </div>
             </div>
-          </Glow>
-        </GlowCapture>
+          ))}
+        </div>
       </div>
     </section>
   );
