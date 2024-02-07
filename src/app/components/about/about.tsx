@@ -24,12 +24,8 @@ export const About = () => {
           <Image
             src="/images/portrait.jpg"
             alt="portrait"
-            sizes="100vw"
-            style={{
-              width: "100%",
-              height: "auto",
-              borderRadius: "2rem",
-            }}
+            sizes="(max-width: 768px) 33vw, 100vw"
+            className="mx-auto w-1/2 rounded-2xl lg:w-full"
             width={500}
             height={300}
           />

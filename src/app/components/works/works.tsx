@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { useWorks } from "./works.effect";
-import { GlowCapture, Glow } from "@codaworks/react-glow";
 import { projects } from "@/app/lib/data";
 import Image from "next/image";
 import clsx from "clsx";
@@ -27,7 +26,7 @@ export const Works = () => {
             <div
               key={index}
               className={clsx(
-                "flexw-full group relative flex-col rounded-lg border-2 border-gray-600 bg-[url('/images/bg-work.jpg')] bg-cover 2xl:h-[700px] 2xl:w-[700px]",
+                "flexw-full group relative flex-col rounded-sm border-2 border-gray-600 bg-[url('/images/bg-work.jpg')] bg-cover 2xl:h-[700px] 2xl:w-[700px]",
                 project.image && "h-[800px] lg:h-[700px] 2xl:w-full",
                 !project.image && "h-[400px]",
               )}
