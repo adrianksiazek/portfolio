@@ -1,4 +1,4 @@
-import { sendEmail } from "@/app/actions/actions";
+import { sendEmail } from "@/app/(site)/actions/actions";
 import { useState } from "react";
 import { Errors } from "./contact-form.types";
 import toast from "react-hot-toast";

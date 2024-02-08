@@ -1,22 +1,8 @@
 "use client";
 
-import { services, technologies } from "@/app/lib/data";
+import { container, listItem } from "@/app/(site)/animations/animations";
+import { services, technologies } from "@/app/(site)/lib/data";
 import { motion } from "framer-motion";
-
-const container = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-
-const listItem = {
-  hidden: { y: 100, opacity: 0 },
-  show: { y: 0, opacity: 1 },
-};
 
 export const Skills = () => {
   return (

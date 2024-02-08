@@ -10,13 +10,18 @@
   },
   "dependencies": {
     "@react-email/components": "0.0.12",
-    "next": "14.0.4",
+    "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.28.0",
+    "next": "14.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sanity": "^3.28.0",
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@codaworks/react-glow": "1.0.6",
     "@studio-freight/react-lenis": "^0.0.38",
+    "@tanstack/react-query": "^5.18.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -28,6 +33,7 @@
     "framer-motion": "^10.16.16",
     "gsap": "^3.12.4",
     "moment-timezone": "^0.5.43",
+    "next-sanity": "^7.1.1",
     "postcss": "^8",
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.11",

@@ -3,10 +3,10 @@
 import React from "react";
 import { Resend } from "resend";
 import { ContactFormEmail } from "../components/contact/contact-form/contact-form-email";
-import { validateString } from "../lib/utils";
+import { validateString } from "../lib/validateString";
 import { Errors } from "../components/contact/contact-form/contact-form.types";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 
 export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail");
