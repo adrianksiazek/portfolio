@@ -15,4 +15,6 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          CI: true
+          NEXT_PUBLIC_RESEND_API_KEY: ${{ secrets.NEXT_PUBLIC_RESEND_API_KEY }}
+          NEXT_PUBLIC_SANITY_PROJECT_ID: ${{ secrets.NEXT_PUBLIC_SANITY_PROJECT_ID }}
+          NEXT_PUBLIC_SANITY_DATASET: ${{ secrets.NEXT_PUBLIC_SANITY_DATASET }}
