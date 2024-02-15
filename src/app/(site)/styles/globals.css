@@ -21,7 +21,7 @@
     @apply max-w-[1440px] px-2 md:px-4 2xl:px-0;
   }
   .heading-section {
-    @apply text-center text-8xl font-bold uppercase;
+    @apply text-center text-6xl font-bold uppercase md:text-7xl lg:text-8xl;
   }
   .form-control {
     @apply border-b-2 border-gray-950 bg-transparent pb-4 focus:outline-none;

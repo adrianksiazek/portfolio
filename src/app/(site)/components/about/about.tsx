@@ -38,7 +38,7 @@ export const About = () => {
           viewport={{ once: true }}
         >
           <div className="mx-auto max-w-2xl text-justify text-lg">
-            <h3 className="mt-5 text-6xl font-bold">A brief intro, who am I? </h3>
+            <h3 className="mt-5 text-5xl font-bold md:text-6xl">A brief intro, who am I? </h3>
             <p className="mt-5 text-2xl leading-9 text-gray-800">
               I am a self-taught, creative frontend developer, web designer and wanted to become full stack developer
               with UI/UX skills in the future based in Wroclaw, Poland. I'm passionate about catering to emerging

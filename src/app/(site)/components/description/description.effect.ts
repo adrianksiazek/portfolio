@@ -1,17 +1,10 @@
 import gsap from "gsap";
 import { useEffect } from "react";
+import { getScrollTrigger } from "../../animations/animations";
 
 export const useDescription = () => {
   useEffect(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#description",
-        start: "+=200 center",
-        end: "center center",
-        scrub: 2,
-        toggleActions: "play none none reverse",
-      },
-    });
+    const tl = gsap.timeline(getScrollTrigger("#description", "+=200 center", "center center"));
 
     tl.to(".body", { backgroundColor: "#030712" });
   }, []);

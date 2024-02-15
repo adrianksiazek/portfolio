@@ -12,3 +12,15 @@ export const listItem = {
   hidden: { y: 100, opacity: 0 },
   show: { y: 0, opacity: 1 },
 } as const;
+
+export const getScrollTrigger = (section: string, start: string, end: string) => {
+  return {
+    scrollTrigger: {
+      trigger: section,
+      start: start,
+      end: end,
+      scrub: 2,
+      toggleActions: "play none none reverse",
+    },
+  };
+};

@@ -26,7 +26,7 @@ export const Contact = () => {
       <div className="my-24 flex flex-col lg:flex-row lg:space-x-52">
         <div className="mb-20 flex w-full flex-col justify-between lg:mb-0 lg:w-3/4">
           <div>
-            <h3 className="text-6xl font-bold">Have an awesome idea? Let's bring it to life.</h3>
+            <h3 className="text-5xl font-bold md:text-6xl">Have an awesome idea? Let's bring it to life.</h3>
             <p className="mb-16 mt-8 text-3xl text-gray-500">
               I am looking for freelance opportunities or internships in startups, software houses, agencies and design
               studios

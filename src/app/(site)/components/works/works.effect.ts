@@ -3,18 +3,11 @@ import { useEffect } from "react";
 import { getWork } from "../../../../../sanity/query";
 import { Work } from "./works.types";
 import { useQuery } from "@tanstack/react-query";
+import { getScrollTrigger } from "../../animations/animations";
 
 export const useWorks = () => {
   useEffect(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#works",
-        start: "-=400 center",
-        end: "top center",
-        scrub: 2,
-        toggleActions: "play none none reverse",
-      },
-    });
+    const tl = gsap.timeline(getScrollTrigger("#works", "-=400 center", "top center"));
 
     tl.to(".body", { backgroundColor: "#030712" });
   }, []);
