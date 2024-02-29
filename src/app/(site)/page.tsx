@@ -1,10 +1,12 @@
-import { Hero } from "./components/hero/hero";
 import { DefaultLayout } from "./components/default-layout/default-layout";
-import { Skills } from "./components/skills/skills";
-import { Description } from "./components/description/description";
-import { Contact } from "./components/contact/contact";
-import { Works } from "./components/works/works";
-import { About } from "./components/about/about";
+import dynamic from "next/dynamic";
+
+const About = dynamic(() => import("./components/about/about"));
+const Works = dynamic(() => import("./components/works/works"));
+const Contact = dynamic(() => import("./components/contact/contact"));
+const Description = dynamic(() => import("./components/description/description"));
+const Skills = dynamic(() => import("./components/skills/skills"));
+const Hero = dynamic(() => import("./components/hero/hero"));
 
 export default function Home() {
   return (

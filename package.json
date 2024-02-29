@@ -19,13 +19,11 @@
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
-    "@codaworks/react-glow": "1.0.6",
     "@studio-freight/react-lenis": "^0.0.38",
     "@tanstack/react-query": "^5.18.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "@uidotdev/usehooks": "^2.4.1",
     "autoprefixer": "^10.0.1",
     "clsx": "^2.1.0",
     "eslint": "^8",

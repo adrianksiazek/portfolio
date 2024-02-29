@@ -4,7 +4,7 @@ import { container, listItem } from "@/app/(site)/animations/animations";
 import { services, technologies } from "@/app/(site)/lib/data";
 import { motion } from "framer-motion";
 
-export const Skills = () => {
+export default function Skills() {
   return (
     <section id="skills" className="section my-64 w-full">
       <motion.h2
@@ -52,4 +52,4 @@ export const Skills = () => {
       </div>
     </section>
   );
-};
+}

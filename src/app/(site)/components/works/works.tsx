@@ -5,7 +5,7 @@ import { useWorks } from "./works.effect";
 import Image from "next/image";
 import clsx from "clsx";
 
-export const Works = () => {
+export default function Works() {
   const { works } = useWorks();
 
   return (
@@ -71,4 +71,4 @@ export const Works = () => {
       </div>
     </section>
   );
-};
+}

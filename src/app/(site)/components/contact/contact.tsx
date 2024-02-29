@@ -9,7 +9,7 @@ import { HiMail } from "react-icons/hi";
 import { Clock } from "./clock/clock";
 import { useContact } from "./contact.effect";
 
-export const Contact = () => {
+export default function Contact() {
   useContact();
 
   return (
@@ -80,4 +80,4 @@ export const Contact = () => {
       </div>
     </section>
   );
-};
+}

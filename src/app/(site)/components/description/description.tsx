@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useDescription } from "./description.effect";
 
-export const Description = () => {
+export default function Description() {
   useDescription();
 
   return (
@@ -21,4 +21,4 @@ export const Description = () => {
       </motion.div>
     </section>
   );
-};
+}

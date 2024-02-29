@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useAbout } from "./about.effect";
 import Image from "next/image";
 
-export const About = () => {
+export default function About() {
   useAbout();
 
   return (
@@ -54,4 +54,4 @@ export const About = () => {
       </div>
     </section>
   );
-};
+}

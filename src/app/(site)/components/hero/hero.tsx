@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useHero } from "./hero.effect";
 
-export const Hero = () => {
+export default function Hero() {
   useHero();
 
   return (
@@ -46,4 +46,4 @@ export const Hero = () => {
       </div>
     </section>
   );
-};
+}
