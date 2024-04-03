@@ -66,7 +66,7 @@ export default function Contact() {
                 </a>
               </li>
               <li>
-                <a className="btn btn-tertiary text-[1.35rem]" href="https://github.com/azeksi" target="_blank">
+                <a className="btn btn-tertiary text-[1.35rem]" href="https://github.com/adrianksiazek" target="_blank">
                   <FaGithubSquare /> Github
                 </a>
               </li>
